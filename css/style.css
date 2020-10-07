@@ -1,4 +1,4 @@
-.box{
+/* .box{
     width: 100px;
     height: 100px;
     background-color: #CFC;
@@ -14,4 +14,30 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+} */
+body{
+    background-color: #EEE;
+}
+
+#container{
+background-color: #FFF;
+padding: 12px;
+height: 100%;
+}
+
+.item{
+    width: 200px;
+background-color: #DDD;
+padding: 8px;
+}
+
+.item img{
+    width:100%;
+}
+.item .name{
+    font-size: 24px;
+}
+.item .price{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
