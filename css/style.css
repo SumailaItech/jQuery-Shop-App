@@ -1,8 +1,17 @@
-.highlight{
-    /* background-color: #FF0; */
-    color: #00F;
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #CFC;
 }
-
-.item{
-    margin-left: 8px;
+.highlight{
+    background-color:#fcc ;
+}
+.box-button{
+    width: 100px;
+    height: 20px;
+    background-color:#ccf;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
