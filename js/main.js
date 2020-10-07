@@ -1,3 +1,7 @@
 $(document).ready(function(){
-   $('#container >>> .solid').addClass('highlight');
+ // $('#container input:required').addClass('highlight');
+$('#container')
+.find('.hot')
+.children('.non-solid')
+.addClass('highlight');
 })
