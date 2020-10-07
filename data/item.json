@@ -1,0 +1,23 @@
+{
+    "iterms":[
+        {
+        "name":"Santo monica",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    },
+    {
+        "name":"Sweato Villa",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    },
+    {
+        "name":"New York City",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    }
+
+]
+}
