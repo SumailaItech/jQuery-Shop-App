@@ -1,17 +1,16 @@
-function addIterm(name,description,price,moreInfo){
+var cart = 0;
+function addIterm(id,name,image_url,description,price,moreInfo){
     let html =`
-    <div class="item">
+    <div class="item" data-id='${ id }'>
     <div class="name">${ name }</div>
-    <img src="assets/1.jpeg" alt="">
-    <div class="description">Lorem ipsum dolor, 
-    sit amet consectetur adipisicing elit. 
-    Officiist.</div>
-    <div class="price">499</div>
-    <button class="item-add">Add to cart</button>
+    <img src="${ image_url }" alt="">
+    <div class="description">${ description }</div>
+    <div class="price">${ price }</div>
+    <button class="iterm-add">Add to cart</button>
     <button class="item-remove">Remove</button><br>
     <a href="#" class="more-info-link">More Info</a>
     <div class="more-info">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,
+      ${ moreInfo }
        </div>
     </div>
     `;
@@ -25,9 +24,9 @@ $(document).ready(function(){
 // $('#input-create-item').val('');
 // });
 
-// $('#container').on('click','.item-remove', function(){
-//    $(this).parent().remove();
-// });
+$('#container').on('click','.item-remove', function(){
+   $(this).parent().remove();
+});
 
 $('#container').on('click','.more-info-link',
 function(event){
@@ -47,11 +46,56 @@ $.ajax('data/item.json',{
 .done(function(response){
     let iterms = response.iterms
     iterms.forEach(function(iterm){
-        addIterm(iterm.name,iterm.description,iterm.price,iterm.moreInfo);
+        addIterm(iterm.id,iterm.name,iterm.image_url,iterm.description,iterm.price,iterm.moreInfo);
     })
 })
 .fail(function(request, errorType, errorMessage){
     console.log(errorMessage);
 })
-.always()
+.always(function(){
+
+});
+
+$('#container').on('click','.iterm-add',function(){
+    let id =$(this).parent().data('id');
+    console.log(id)
+    $.ajax('data/addToCart.json',{
+        type:'post',
+        data:{id: id },
+        dataType:'json',
+        contentType:'application/json'
+    })
+    .done(function(response){
+        if(response.message ==='success'){
+            let price = response.price;
+            cart += price;
+
+            $('#cart-container').text('$' + cart);
+        }
+    })
+});
+
+$('#news-letter-checkbox').on('change', function(){
+ if($(this).is(':checked')){
+  $('#news-letter-freq').fadeIn();
+ }else{
+    $('#news-letter-freq').fadeOut();
+ }
+});
+
+$('#news-letter-checkbox').trigger('change');
+
+$('#cart-form').on('submit', function(event){
+event.preventDefault();
+
+let data = {form: $(this).serialize(), price:cart };
+console.log(data.form);
+$.ajax($(this).attr('action'),{
+    type:'post',
+    data:data
+})
+.done(function(response){
+$('#feedback-message').text(response.message);
+})
+});
 });

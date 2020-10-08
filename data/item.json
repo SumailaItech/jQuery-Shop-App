@@ -1,19 +1,49 @@
 {
     "iterms":[
         {
+        "id":101,
         "name":"Santo monica",
+        "image_url":"assets/pexel3.jpeg",
         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
         "price":499,
         "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
     },
     {
-        "name":"Sweato Villa",
+        "id":102,
+        "name":"Sowato Villa",
+        "image_url":"assets/pexel2.jpeg",
         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
         "price":499,
         "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
     },
     {
+        "id":103,
         "name":"New York City",
+        "image_url":"assets/pexel1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    },
+    {
+        "id":104,
+        "name":"Navrongo City",
+        "image_url":"assets/img_snow.jpg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    },
+    {
+        "id":105,
+        "name":"Bacelona City",
+        "image_url":"assets/img_nature.jpg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
+        "price":499,
+        "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"
+    },
+    {
+        "id":106,
+        "name":"Yendi City",
+        "image_url":"assets/1.jpeg",
         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,",
         "price":499,
         "moreInfo":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum error aliquid repellendus quod ullam quisquam, pariatur at facilis voluptatum minus maxime consectetur,"

@@ -9,9 +9,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="admin-container">
+  <!-- <div class="admin-container">
     <input type="text" id="input-new-item">
     <button id="button-create-item">Add</button>
+  </div> -->
+  <div id="cart-container">
+    $0
+  </div>
+  <div id="user-data">
+    <div id="feedback-message"></div>
+  <form id="cart-form" action="data/cartSubmit.json" method="POST">
+    <br>
+    <label for="">Name</label>
+    <input type="text" name="name">
+    <br>
+    <label for="">Email</label>
+    <input type="text" name="email">
+    <br>
+    <label for="">News letter?</label>
+    <input type="checkbox" name="wantNewsLetter" id="news-letter-checkbox" checked>
+    <br>
+    <select name="selectFreq" id="news-letter-freq" >
+      <option value="">-</option>
+      <option value="Weekly" selected>Weekly</option>
+      <option value="Monthly">Monthly</option>
+    </select>
+    <br>
+    <button id="submit-cart">Submit</button>
+  </form>
+  
   </div>
    <div id="container">
     <!-- <div class="item">
